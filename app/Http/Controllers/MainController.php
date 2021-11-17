@@ -9,7 +9,11 @@ class MainController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $r = Http::withHeaders
+        (['Authorization' => 'Bearer ' . env("Authorization")])
+            ->get("https://api.nft.storage/?limit=10");
+        $r = $r['value'];
+        return view('index',compact('r'));
     }
 
     public function look(Request $request)
@@ -22,5 +26,10 @@ class MainController extends Controller
             ->post("https://api.nft.storage/upload");
 
         return view('inceleme', compact("r"));
+    }
+
+    public function del(Request $request)
+    {
+        return view("welcome");
     }
 }
