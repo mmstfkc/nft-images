@@ -27,9 +27,4 @@ class MainController extends Controller
 
         return view('inceleme', compact("r"));
     }
-
-    public function del(Request $request)
-    {
-        return view("welcome");
-    }
 }
