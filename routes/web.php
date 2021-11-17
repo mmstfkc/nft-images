@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\MainController::class,'index'])->name('index');
+Route::post('/inceleme', [\App\Http\Controllers\MainController::class,'look'])->name('look');
