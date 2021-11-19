@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\MainController::class,'index'])->name('index');
+Route::get('/list', [\App\Http\Controllers\MainController::class,'list'])->name('list');
+Route::get('/single', [\App\Http\Controllers\MainController::class,'single'])->name('single');
 Route::post('/inceleme', [\App\Http\Controllers\MainController::class,'look'])->name('look');
+Route::post('/getImage', [\App\Http\Controllers\MainController::class,'getImage'])->name('getImage');
+

@@ -1,0 +1,11 @@
+.div{
+    background-color: turquoise;
+    margin: 25px;
+    padding: 20px;
+    height:auto;
+    width:auto;
+}
+.div-image{
+    height:15%;
+    width:15%
+}
