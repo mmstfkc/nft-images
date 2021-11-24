@@ -7,7 +7,7 @@
     @yield('title')
     <link rel="stylesheet" href="{{ asset('try.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset("app.js") }}"></script>
 </head>
 <body>
 @yield('content')
