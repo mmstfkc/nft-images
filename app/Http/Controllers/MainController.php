@@ -45,4 +45,8 @@ class MainController extends Controller
 
         return view('inceleme', compact("r"));
     }
+    public function metamask(){
+        return view('metamask');
+    }
+
 }

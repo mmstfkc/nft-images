@@ -18,4 +18,5 @@ Route::get('/list', [\App\Http\Controllers\MainController::class,'list'])->name(
 Route::get('/single', [\App\Http\Controllers\MainController::class,'single'])->name('single');
 Route::post('/inceleme', [\App\Http\Controllers\MainController::class,'look'])->name('look');
 Route::post('/getImage', [\App\Http\Controllers\MainController::class,'getImage'])->name('getImage');
+Route::get('/metamask', [\App\Http\Controllers\MainController::class,'metamask'])->name('metamask');
 
